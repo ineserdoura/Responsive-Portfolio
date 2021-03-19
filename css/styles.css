@@ -13,8 +13,9 @@
 --background-color-light-secondary:#5d5b6a;
 --primary-color-dark:#ff1e56;
 --secondary-color-dark:#ffac41;
---background-color-dark-primary:#323232;
---background-color-dark-secondary:#000000;
+--background-color-dark-primary:#222831;
+--background-color-dark-secondary:#000;
+--shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
 
 /*---------*/
@@ -49,17 +50,15 @@ body{
 h1, h2, h3, h4, h5, h6{
     font-family: 'JetBrains Mono', monospace;
     color:var(--primary);
-    ;
+    
 }
 
-.hero{
-  
-}
+
 
 nav {
 background-color: var(--background-secondary) !important;
-box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-opacity: 0.8;
+box-shadow: var(--shadow);
+opacity: 0.6;
 }
 
 
@@ -74,15 +73,51 @@ a{
     margin: 10px;
     padding: 10px;
     width: 100px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-}
-
-a:hover{
+    box-shadow: var(--shadow);
    
-    color:var(--primary) !important;
 }
 
-.hero h2, h3{
-font-family: 'Source Sans Pro', sans-serif;
+a:hover{ color:var(--primary) !important;
+}
+.hero h1{
+font-size: 5rem;
 }
 
+.hero h2{
+font-size: 3rem;
+}
+
+.hero h3{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+@media (max-width:568px){
+    .hero h1{
+        font-size: 3rem;
+        }
+        
+        .hero h2{
+        font-size: 1rem;
+        }
+
+}
+
+.polaroid {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    width: 60%;
+    float: right;
+    transform: rotate(-4deg);
+  }
+  .polaroid > img{
+    max-width: 100%;
+    height: auto;
+  }
+  .caption {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2em;
+    color:var(--primary);
+  }

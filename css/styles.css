@@ -4,10 +4,37 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Source+Sans+Pro&display=swap');
 
 /*---------*/
-h1{
-    font-family: 'JetBrains Mono', monospace;
+
+/*color scheme*/
+:root{
+--primary-color-light:#cfb495;
+--secondary-color-light:#f5cdaa;
+--background-color-light-primary:#758184;
+--background-color-light-secondary:#5d5b6a;
+--primary-color-dark:#ff1e56;
+--secondary-color-dark:#ffac41;
+--background-color-dark-primary:#323232;
+--background-color-dark-secondary:#000000;
 }
 
-p{
+/*---------*/
+
+/*light theme*/
+
+
+/*---------*/
+
+/*dark theme*/
+
+
+/*---------*/
+
+
+body{
     font-family: 'Source Sans Pro', sans-serif;
 }
+h1{
+    font-family: 'JetBrains Mono', monospace;
+
+}
+

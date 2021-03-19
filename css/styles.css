@@ -68,9 +68,9 @@ a{
     
 }
 
-.home-link{
+.btn-branding{
     background:var(--background-secondary) !important;
-    border-radius: 20px;
+    border-radius: 5px;
     margin: 10px;
     padding: 10px;
     width: 100px;

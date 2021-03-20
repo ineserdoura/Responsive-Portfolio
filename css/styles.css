@@ -108,7 +108,6 @@ font-size: 3rem;
     padding: 1rem;
     box-shadow: var(--shadow);
     width: 60%;
-    float: right;
     transform: rotate(-4deg);
   }
   .polaroid > img{

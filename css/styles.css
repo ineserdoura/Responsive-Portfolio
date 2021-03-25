@@ -127,3 +127,34 @@ a:hover {
     font-size: 1rem;
   }
 }
+
+
+/*My projects*/
+
+#my-projects{
+    background-color: var(--background-secondary);
+}
+#my-projects h1 {
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  .card {
+    background-color: var(--background-primary);
+  }
+  
+  .card-body{
+  padding: 1rem 0;
+  }
+  
+  .card-body h6 {
+    color: var(--primary);
+    font-weight: bolder;
+  }
+  .card-body a {
+    text-decoration: none;
+  }
+  .card-body i {
+    color: var(--primary-variant);
+  }
+  .card-body i:hover {
+    color: var(--secondary);
+  }

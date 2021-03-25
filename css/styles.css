@@ -44,8 +44,7 @@
 body{
     font-family: 'Source Sans Pro', sans-serif;
     background: var(--background-primary);
-    color: #fff;
-    transition: background-color 0.5s ease, color 1s ease;
+    color: #fff
 }
 
 h1, h2, h3, h4, h5, h6{

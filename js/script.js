@@ -37,6 +37,8 @@ function darkMode() {
   body.classList.add("dark-theme");
   darkModeIcon.classList.remove(`fa-moon`);
   darkModeIcon.classList.add(`fa-sun`);
+  darkModeButton.removeAttribute("title");
+  darkModeButton.setAttribute("title", "Turn lights on");
 }
 
 function lightMode() {
@@ -44,4 +46,6 @@ function lightMode() {
   body.classList.add("light-theme");
   darkModeIcon.classList.remove(`fa-sun`);
   darkModeIcon.classList.add(`fa-moon`);
+  darkModeButton.removeAttribute("title");
+  darkModeButton.setAttribute("title", "Turn lights off");
 }

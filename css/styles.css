@@ -113,7 +113,7 @@ a:hover {
   font-size: 2rem;
 }
 
-@media (max-width: 568px) {
+
   .hero h1 {
     font-size: 3rem;
   }
@@ -126,7 +126,21 @@ a:hover {
     width: 100px;
     font-size: 1rem;
   }
+
+/*About me*/
+
+.about-me img{
+  height: 300px !important;
+  box-shadow: var(--shadow);
 }
+
+@media (max-width: 568px) {
+  .about-me img{
+   display:none;
+  }
+
+}
+
 
 
 /*My projects*/

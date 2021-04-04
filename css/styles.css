@@ -7,14 +7,16 @@
 
 /*color scheme*/
 :root {
-  --primary-color-light: #cfb495;
-  --secondary-color-light: #f5cdaa;
-  --background-color-light-primary: #758184;
-  --background-color-light-secondary: rgba(93, 91, 106, 0.75);
+  --primary-color-light: #733626;
+  --secondary-color-light: #ad6c50;
+  --background-color-light-primary: #fff;
+  --background-color-light-secondary: rgba(253, 232, 205, 0.75);
+  --text-light: #733626;
   --primary-color-dark: #ff1e56;
   --secondary-color-dark: #ffac41;
   --background-color-dark-primary: #222831;
   --background-color-dark-secondary: rgba(0, 0, 0, 0.75);
+  --text-dark: #fff;
   --shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -26,6 +28,7 @@
   --secondary: var(--secondary-color-light);
   --background-primary: var(--background-color-light-primary);
   --background-secondary: var(--background-color-light-secondary);
+  --text:var(--text-light);
 }
 
 /*---------*/
@@ -36,6 +39,7 @@
   --secondary: var(--secondary-color-dark);
   --background-primary: var(--background-color-dark-primary);
   --background-secondary: var(--background-color-dark-secondary);
+  --text:var(--text-dark);
 }
 
 /*---------*/
@@ -43,7 +47,7 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   background: var(--background-primary);
-  color: #fff;
+color:var(--text);
 }
 
 h1,
@@ -66,7 +70,7 @@ nav {
 }
 
 a {
-  color: #fff !important;
+  color:var(--text) !important;
 }
 
 a:hover {
@@ -242,4 +246,18 @@ a:hover {
 .contact li{
   padding: 1rem;
   font-size: 2rem;
+}
+
+.contact a{
+  text-decoration: none;
+}
+
+.contact i{
+  font-size: 2rem;
+}
+
+@media (max-width: 568px) {
+  .contact .social-media {
+    display: none;
+  }
 }

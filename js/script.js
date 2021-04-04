@@ -70,7 +70,7 @@ fetch("https://api.github.com/users/ineserdoura/repos")
       const descripion =repo.description;
       // create col
       const col = document.createElement("div");
-      col.classList.add("col-md-4", "col-12", "mt-5");
+      col.classList.add("col-md-4", "col-12", "mt-3");
 
       //create card
       const card = document.createElement("div");
@@ -96,7 +96,6 @@ fetch("https://api.github.com/users/ineserdoura/repos")
 
       //create card descripion
       const cardDescription = document.createElement("p");
-      cardDescription.classList.add("card-text");
       cardDescription.innerHTML=`${descripion}`;
 
       // create card text / languages icons
@@ -147,5 +146,5 @@ fetch("https://api.github.com/users/ineserdoura/repos")
   })
   .catch(() => {
     // if no response/ error from the api hide my projects link on menu and my projects section
-    myProjectsSection.classList.add("none");
+    myProjectsSection.style.display="none";
   });

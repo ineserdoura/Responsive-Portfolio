@@ -232,3 +232,14 @@ a:hover {
 .card-odd .card-body a:hover {
   color: var(--secondary) !important;
 }
+
+/*Contact*/
+
+.contact ul{
+  list-style: none;
+}
+
+.contact li{
+  padding: 1rem;
+  font-size: 2rem;
+}

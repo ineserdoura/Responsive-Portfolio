@@ -128,7 +128,9 @@ a:hover {
   }
 
 /*About me*/
-
+.about-me{
+  margin-top: 6rem;
+}
 .about-me img{
   height: 300px !important;
   box-shadow: var(--shadow);

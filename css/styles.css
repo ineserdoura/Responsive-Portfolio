@@ -130,6 +130,10 @@ a:hover {
 .about-me {
   margin-top: 6rem;
 }
+
+.about-me h6{
+  color:var(--secondary);
+}
 .about-me img {
   height: 300px !important;
   box-shadow: var(--shadow);
@@ -167,12 +171,9 @@ a:hover {
   background-color: var(--background-secondary);
   box-shadow: var(--shadow);
   border: none;
+  padding: 0.5rem 0;
 }
-.card-body {
-  padding: 2rem 0;
-  
-  
-}
+
 
 .card-body a {
   text-decoration: none;
@@ -182,9 +183,7 @@ a:hover {
   font-size: 0.7rem;
 }
 
-.card-body i:hover {
-  color: var(--secondary);
-}
+
 
 /*Even cards*/
 
@@ -198,8 +197,16 @@ a:hover {
   color: var(--secondary);
 }
 
-.card-even .card-body i:hover {
+.card-even a {
+  color: var(--secondary) !important;
+}
+
+.card-even .card-body i:hover{
   color: var(--primary);
+}
+
+.card-even .card-body a:hover{
+  color: var(--primary) !important;
 }
 
 /*Odd cards*/
@@ -210,10 +217,18 @@ a:hover {
   font-weight: bolder;
 }
 
-.card-odd i {
+.card-odd i{
   color: var(--primary);
+}
+
+.card-odd a{
+  color: var(--primary) !important;
 }
 
 .card-odd .card-body i:hover {
   color: var(--secondary);
+}
+
+.card-odd .card-body a:hover {
+  color: var(--secondary) !important;
 }

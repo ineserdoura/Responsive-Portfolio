@@ -21,12 +21,13 @@ for (const link of links) {
 }
 
 
+//dark mode
 
-// dark mode based on system preferences
 const body = document.querySelector("body");
 const darkModeButton = document.querySelector("#dark-mode");
 const darkModeIcon = document.querySelector("#dark-mode > i");
 
+// dark mode based on system preferences
 //verify if the browser supports matchMedia and verify if the condition of the color scheme dark matches
 
 const userPrefersDark =
@@ -90,7 +91,7 @@ window.addEventListener("scroll", () => {
   }
 });
 // get git hub api response
-
+const myProjectsLink= document.querySelector("#navbarSupportedContent > ul > li:nth-child(2) > a");
 const myProjectsSection = document.querySelector("#projects");
 const myProjectsItems = document.querySelector("#projects-items");
 
@@ -188,5 +189,6 @@ fetch("https://api.github.com/users/ineserdoura/repos")
   })
   .catch(() => {
     // if no response/ error from the api hide my projects link on menu and my projects section
+    myProjectsLink.style.display="none";
     myProjectsSection.style.display = "none";
   });

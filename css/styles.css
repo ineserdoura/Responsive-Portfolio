@@ -9,7 +9,7 @@
 :root {
   --primary-color-light: #733626;
   --secondary-color-light: #ad6c50;
-  --background-color-light-primary: #fff;
+  --background-color-light-primary: #fff5ea;
   --background-color-light-secondary: rgba(253, 232, 205, 0.75);
   --text-light: #733626;
   --primary-color-dark: #ff1e56;
@@ -151,8 +151,6 @@ a:hover {
 
 .extra {
   padding: 1rem 0 !important;
-  background-color: var(--background-secondary);
-  box-shadow: var(--shadow);
 }
 
 .extra h4 {

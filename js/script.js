@@ -1,3 +1,25 @@
+// scroll to elements
+
+const links = document.querySelectorAll(".nav-link"); // select all nav bar links
+console.log(links)
+for (const link of links) {
+  // foreach link of links
+  link.addEventListener("click", (event) => {
+    event.preventDefault(); // prevents the default behaviour from the a element
+    let pageSection = link.getAttribute("href"); // selects the href of the link
+    let target = document.querySelector(pageSection); // selects the element with the id of the page section
+
+    // fix navbar fixed-top blocking top content of the page problem
+    let headerOffset = 130;
+    let elementPosition = target.offsetTop; // gets the section top position
+    let offsetPosition = elementPosition - headerOffset;
+    window.scroll({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
+}
+
 
 
 // dark mode based on system preferences

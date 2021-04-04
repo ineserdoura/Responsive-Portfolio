@@ -77,7 +77,10 @@ a:hover {
   color: var(--secondary) !important;
 }
 /*hero*/
-
+.hero{
+  margin-bottom: 6rem !important;
+  margin-top:6rem !important
+}
 .polaroid {
   background: #fff;
   padding: 1rem;
@@ -90,45 +93,38 @@ a:hover {
   height: auto;
 }
 .caption {
-  font-size: 1.8rem;
+  font-size: 1rem;
   text-align: center;
   line-height: 2em;
   color: var(--primary);
 }
 
 .hero h1 {
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 .hero h2 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .hero h3 {
   font-family: "Source Sans Pro", sans-serif;
 }
-.btn-branding {
-  background: var(--background-secondary) !important;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 10px;
-  width: 300px;
-  box-shadow: var(--shadow);
-  font-size: 2rem;
+
+
+@media (max-width: 568px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero h2 {
+    font-size: 1rem;
+  }
+
+ 
 }
 
-.hero h1 {
-  font-size: 3rem;
-}
 
-.hero h2 {
-  font-size: 1.5rem;
-}
-
-.btn-branding {
-  width: 100px;
-  font-size: 1rem;
-}
 
 /*About me*/
 .about-me {

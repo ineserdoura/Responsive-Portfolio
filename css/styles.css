@@ -143,34 +143,72 @@ a:hover {
 
 }
 
+.extra {
+  padding: 1rem 0 !important;
+  background-color: var(--background-secondary);
+  box-shadow: var(--shadow);
+}
+
+.extra h4{
+  color:var(--primary);
+}
+
+.extra ul {
+  margin-bottom: 0 !important;
+  padding-left: 0 !important;
+}
+
+.extra .badge{
+  background-color:var(--secondary);
+}
 
 
 /*My projects*/
 
-#my-projects{
-    background-color: var(--background-secondary);
-}
-#my-projects h1 {
-    font-family: "Source Sans Pro", sans-serif;
-  }
-  .card {
-    background-color: var(--background-primary);
-  }
-  
-  .card-body{
+/*Cards*/
+
+.card-body{
   padding: 1rem 0;
+  box-shadow: var(--shadow
+  );
+  }
+
+.card-body a {
+    text-decoration: none;
+  }
+
+  .card-body i:hover {
+    color: var(--secondary);
+  }
+
+/*Even cards*/
+.card-even {
+  background-color:var(--primary);
+}
+
+
+
+.card-even h6 {
+  color: var(--background-primary);
+  font-weight: bolder;
+}
+
+.card-even i {
+  color: var(--background-secondary);
+}
+
+/*Odd cards*/
+
+.card-odd {
+    background-color: var(--background-secondary);
   }
   
-  .card-body h6 {
+  
+  .card-odd h6 {
     color: var(--primary);
     font-weight: bolder;
   }
-  .card-body a {
-    text-decoration: none;
-  }
-  .card-body i {
+ 
+  .card-odd i {
     color: var(--primary-variant);
-  }
-  .card-body i:hover {
-    color: var(--secondary);
   }

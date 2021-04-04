@@ -162,8 +162,17 @@ a:hover {
   padding-left: 0 !important;
 }
 
-.extra .badge {
+.badge {
   background-color: var(--secondary);
+}
+
+/*Skills*/
+.progress{
+  background-color: #fff;
+  box-shadow: var(--shadow);
+}
+.progress-bar {
+  background-color: var(--primary);
 }
 
 /*My projects*/

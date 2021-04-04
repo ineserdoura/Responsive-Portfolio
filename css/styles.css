@@ -76,6 +76,10 @@ nav {
   box-shadow: var(--shadow);
 }
 
+.navbar-dark .navbar-toggler{
+  background-color:var(--primary) !important;
+}
+
 a {
   color:var(--text) !important;
 }
@@ -174,6 +178,35 @@ a:hover {
   background-color: var(--secondary);
 }
 
+/*Education*/
+.accordion {
+  box-shadow: var(--shadow);
+}
+.accordion-button {
+  color: var(--secondary) !important;
+  text-align: left !important;
+
+}
+
+.accordion-button:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.25rem var(--primary);
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff !important;
+  background-color: var(--primary) !important;
+}
+
+
+.accordion-item small a {
+  color: var(--primary) !important;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.accordion-item small {
+  font-size: 0.7rem;
+}
 /*Skills*/
 .progress{
   background-color: #fff;

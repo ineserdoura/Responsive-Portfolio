@@ -9,13 +9,15 @@
 :root {
   --primary-color-light: #733626;
   --secondary-color-light: #493323;
-  --background-color-light-primary: #fff5ea;
-  --background-color-light-secondary: rgba(253, 232, 205, 0.75);
+  --background-color-light-primary: #fff;
+  --background-color-light-secondary: #fff;
+  --navbar-color-light: rgba(253, 232, 205, 0.75);
   --text-light: #733626;
   --primary-color-dark: #ff1e56;
   --secondary-color-dark: #ffac41;
   --background-color-dark-primary: #333333;
   --background-color-dark-secondary: rgba(0, 0, 0, 0.75);
+  --navbar-color-dark: rgba(0, 0, 0, 0.75);
   --text-dark: #fff;
   --shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -28,6 +30,7 @@
   --secondary: var(--secondary-color-light);
   --background-primary: var(--background-color-light-primary);
   --background-secondary: var(--background-color-light-secondary);
+  --navbar-color: var(--navbar-color-light);
   --text:var(--text-light);
 }
 
@@ -39,6 +42,7 @@
   --secondary: var(--secondary-color-dark);
   --background-primary: var(--background-color-dark-primary);
   --background-secondary: var(--background-color-dark-secondary);
+  --navbar-color: var(--navbar-color-dark);
   --text:var(--text-dark);
 }
 
@@ -65,7 +69,10 @@ h1 {
 }
 
 nav {
-  background-color: var(--background-secondary) !important;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  padding: 1.5rem 0rem;
+  background-color: var(--navbar-color) !important;
   box-shadow: var(--shadow);
 }
 
@@ -99,17 +106,22 @@ a:hover {
   color: var(--primary);
 }
 
+
+
 .hero h1 {
   font-size: 6rem;
+  color: var(--primary);
+  border: 0.25rem solid var(--primary);
+  width: fit-content;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0 0.4rem;
+
 }
 
 .hero h2 {
   font-size: 4rem;
 }
 
-.hero h3 {
-  font-family: "Source Sans Pro", sans-serif;
-}
 
 
 @media (max-width: 568px) {

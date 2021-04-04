@@ -1,3 +1,5 @@
+
+
 // dark mode based on system preferences
 const body = document.querySelector("body");
 const darkModeButton = document.querySelector("#dark-mode");
@@ -48,6 +50,23 @@ function lightMode() {
   darkModeButton.setAttribute("title", "Turn lights off");
 }
 
+
+// scroll to top arrow
+const hero = document.querySelector("#hero");
+const scrollTop = document.querySelector("#scroll-top");
+scrollTop.addEventListener("click", () => {
+  window.scroll({ top: 0, left: 0, behavior: "smooth" }); // scroll to top of the page after click the arrow
+});
+
+window.addEventListener("scroll", () => {
+  const scrolled = window.pageYOffset;
+  const coords = hero.offsetHeight;
+  if (scrolled <= coords) {
+    scrollTop.style.visibility = "hidden";
+  } else {
+    scrollTop.style.visibility = "";
+  }
+});
 // get git hub api response
 
 const myProjectsSection = document.querySelector("#projects");
@@ -74,7 +93,7 @@ fetch("https://api.github.com/users/ineserdoura/repos")
 
       //create card
       const card = document.createElement("div");
-      card.classList.add("card", "text-center", "rounded");
+      card.classList.add("card", "text-center");
 
       //create card body
       const cardBody = document.createElement("div");

@@ -275,3 +275,23 @@ a:hover {
     display: none;
   }
 }
+
+#scroll-top {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 9rem;
+  right: 0;
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 767px) {
+  #scroll-top {
+    font-size: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+#scroll-top:hover {
+  color: var(--primary);
+}

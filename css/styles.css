@@ -8,13 +8,13 @@
 /*color scheme*/
 :root {
   --primary-color-light: #733626;
-  --secondary-color-light: #ad6c50;
+  --secondary-color-light: #493323;
   --background-color-light-primary: #fff5ea;
   --background-color-light-secondary: rgba(253, 232, 205, 0.75);
   --text-light: #733626;
   --primary-color-dark: #ff1e56;
   --secondary-color-dark: #ffac41;
-  --background-color-dark-primary: #222831;
+  --background-color-dark-primary: #333333;
   --background-color-dark-secondary: rgba(0, 0, 0, 0.75);
   --text-dark: #fff;
   --shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -170,6 +170,7 @@ a:hover {
 .progress{
   background-color: #fff;
   box-shadow: var(--shadow);
+  border: none;
 }
 .progress-bar {
   background-color: var(--primary);
@@ -183,6 +184,7 @@ a:hover {
   box-shadow: var(--shadow);
   border: none;
   padding: 0.5rem 0;
+  border-radius: 1rem;
 }
 
 
@@ -191,7 +193,7 @@ a:hover {
 }
 
 .card p{
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 
@@ -246,6 +248,11 @@ a:hover {
 
 /*Contact*/
 
+.contacts{
+  background-color: var(--background-secondary);
+  box-shadow: var(--shadow);
+  border-radius: 1rem;
+}
 .contact ul{
   list-style: none;
 }
